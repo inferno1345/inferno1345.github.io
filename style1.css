@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-image:transparent;
+    padding-right:50px;
+}
+li{
+    float:right;
+    padding-left:20px;
+
+}
+li a{
+    display: block;
+    color: black;
+    text-align:center;
+    text-decoration:underline;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    z-index:-1;
+    transform: translateZ(-10px) scale(2);
+}
+.title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+.s1{
+    font-size: 2rem;
+    padding: 2rem;
+    background-image:linear-gradient(#141E30,#243B55);
+    color: white;
+}
+.s2{
+    font-size: 2rem;
+    padding: 2rem;
+    background-image:linear-gradient(#141E30,#243B55);
+    color: white;
+}
+.flex1{
+    display: flex;
+    gap: 100px;
+}
+.flex2{
+    display:flex;
+    gap:100px;
+    justify-content:space-between;
+}
+.card1{
+    
+    box-shadow: 0 4px 8px 10px #000000;
+    width: 20%;
+    gap: 500;
+    background-color: #FFFFFF;
+}
+.container{
+    padding-left: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width:1200px;
+    flex-wrap:wrap;
+    z-index:1;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.45s;
+}
+.container:hover{
+    transform: translateY(0px);
+    opacity:1;
+}
+.container .card{
+    position: relative;
+    width: 280px;
+    height:450px;
+    margin:30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid rgba(255, 255, 255, 0.1);
+    border-left:1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+}
+.bod{
+    text-align: center;
+
+}
+.container1{
+    padding-left: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width:1200px;
+    flex-wrap:wrap;
+    z-index:1;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.45s;
+}
+.container1:hover{
+    transform: translateX(0px);
+    opacity:1;
+}
+.container2{
+    padding-left: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width:1200px;
+    flex-wrap:wrap;
+    z-index:1;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 0.45s;
+}
+.container2:hover{
+    transform: translateX(0px);
+    opacity:1;
+}
